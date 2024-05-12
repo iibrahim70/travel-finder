@@ -33,7 +33,7 @@ const FlightDetailsTable = () => {
                       {/* flight details */}
                       {itinerariesObject?.segments?.map(
                         (segment, innerIndex) => (
-                          <p key={innerIndex}>
+                          <p key={innerIndex} className="whitespace-nowrap">
                             {segment?.marketingCarrier} {segment?.aircraft}
                           </p>
                         )
@@ -93,7 +93,7 @@ const FlightDetailsTable = () => {
                       {/* route details */}
                       {itinerariesObject?.segments?.map(
                         (segment, innerIndex) => (
-                          <p key={innerIndex}>
+                          <p key={innerIndex} className="whitespace-nowrap">
                             {segment?.departure?.iataCode} - {""}
                             {segment?.arrival?.iataCode}
                           </p>
@@ -112,7 +112,7 @@ const FlightDetailsTable = () => {
                       {/* departure details */}
                       {itinerariesObject?.segments?.map(
                         (segment, innerIndex) => (
-                          <p key={innerIndex}>
+                          <p key={innerIndex} className="whitespace-nowrap">
                             {new Date(segment?.departure.at).toLocaleString(
                               "en-Us"
                             )}
@@ -132,7 +132,7 @@ const FlightDetailsTable = () => {
                       {/* arrival details */}
                       {itinerariesObject?.segments?.map(
                         (segment, innerIndex) => (
-                          <p key={innerIndex}>
+                          <p key={innerIndex} className="whitespace-nowrap">
                             {new Date(segment?.arrival.at).toLocaleString(
                               "en-Us"
                             )}
