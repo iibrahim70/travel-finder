@@ -1,5 +1,11 @@
+import FlightDetailsTable from "./components/FlightDetailsTable";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <main>
+      <FlightDetailsTable />
+    </main>
+  );
 };
 
 export default App;

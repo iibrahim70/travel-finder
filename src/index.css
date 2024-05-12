@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+table {
+  @apply h-full w-full border-collapse;
+}
+
+th,
+td {
+  @apply p-5 text-left cursor-pointer border-b;
+}
+
+th {
+  @apply bg-gray-300/90;
+}
+
+tr:nth-child(even) {
+  @apply bg-gray-200;
+}
