@@ -8,7 +8,7 @@ table {
 
 th,
 td {
-  @apply p-5 text-left cursor-pointer border-b;
+  @apply p-5 text-center cursor-pointer;
 }
 
 th {
@@ -16,5 +16,5 @@ th {
 }
 
 tr:nth-child(even) {
-  @apply bg-gray-200;
+  @apply bg-gray-200 border-y border-red-500;
 }

@@ -154,8 +154,11 @@ const FlightDetailsTable = () => {
               </td>
 
               {/* Price column */}
-              <td>${item?.price}
-              
+              <td className="flex flex-col items-center gap-y-2">
+                <p>${item?.price}</p>
+                <button className="bg-violet-950/95 text-white px-3.5 py-1 rounded-md shadow-md uppercase font-medium text-sm text-opacity-90">
+                  Select
+                </button>
               </td>
             </tr>
           ))}
