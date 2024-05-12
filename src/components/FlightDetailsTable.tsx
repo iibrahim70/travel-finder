@@ -25,10 +25,12 @@ const FlightDetailsTable = () => {
         <tbody>
           {flightOffer?.map((item: IFlightOffer, index: number) => (
             <tr key={index}>
+              {/* flight column */}
               <td>
                 {item?.itineraries?.map(
                   (itinerariesObject: IItinerary, index: number) => (
                     <div key={index}>
+                      {/* flight details */}
                       {itinerariesObject?.segments?.map(
                         (segment, innerIndex) => (
                           <p key={innerIndex}>
@@ -41,10 +43,12 @@ const FlightDetailsTable = () => {
                 )}
               </td>
 
+              {/* aircraft column */}
               <td>
                 {item?.itineraries?.map(
                   (itinerariesObject: IItinerary, index: number) => (
                     <div key={index}>
+                      {/* aircraft details */}
                       {itinerariesObject?.segments?.map(
                         (segment, innerIndex) => (
                           <p key={innerIndex}>{segment?.flightNumber}</p>
@@ -55,9 +59,11 @@ const FlightDetailsTable = () => {
                 )}
               </td>
 
+              {/* class column */}
               <td>
                 {item?.class?.map((classArray: string[], index: number) => (
                   <div key={index}>
+                    {/* class details */}
                     {classArray?.map((cls, innerIndex) => (
                       <p key={innerIndex}>{cls}</p>
                     ))}
@@ -65,10 +71,12 @@ const FlightDetailsTable = () => {
                 ))}
               </td>
 
+              {/* fare column */}
               <td>
                 {item?.fareBasis?.map(
                   (fareBasisArray: string[], index: number) => (
                     <div key={index}>
+                      {/* fare details */}
                       {fareBasisArray?.map((fare, innerIndex) => (
                         <p key={innerIndex}>{fare}</p>
                       ))}
@@ -77,10 +85,12 @@ const FlightDetailsTable = () => {
                 )}
               </td>
 
+              {/* route column */}
               <td>
                 {item?.itineraries?.map(
                   (itinerariesObject: IItinerary, index: number) => (
                     <div key={index}>
+                      {/* route details */}
                       {itinerariesObject?.segments?.map(
                         (segment, innerIndex) => (
                           <p key={innerIndex}>
@@ -94,10 +104,12 @@ const FlightDetailsTable = () => {
                 )}
               </td>
 
+              {/* departure column */}
               <td>
                 {item?.itineraries?.map(
                   (itinerariesObject: IItinerary, index: number) => (
                     <div key={index}>
+                      {/* departure details */}
                       {itinerariesObject?.segments?.map(
                         (segment, innerIndex) => (
                           <p key={innerIndex}>
@@ -112,10 +124,12 @@ const FlightDetailsTable = () => {
                 )}
               </td>
 
+              {/* arrival column */}
               <td>
                 {item?.itineraries?.map(
                   (itinerariesObject: IItinerary, index: number) => (
                     <div key={index}>
+                      {/* arrival details */}
                       {itinerariesObject?.segments?.map(
                         (segment, innerIndex) => (
                           <p key={innerIndex}>
@@ -130,6 +144,7 @@ const FlightDetailsTable = () => {
                 )}
               </td>
 
+              {/* duration column */}
               <td>
                 {item?.itineraries?.map(
                   (itinerariesObject: IItinerary, index: number) => (
@@ -138,7 +153,10 @@ const FlightDetailsTable = () => {
                 )}
               </td>
 
-              <td>${item?.price}</td>
+              {/* Price column */}
+              <td>${item?.price}
+              
+              </td>
             </tr>
           ))}
         </tbody>
