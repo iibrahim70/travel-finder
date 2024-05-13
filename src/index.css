@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.section-wrapper {
+  @apply px-5 lg:px-10 max-w-[1536px] mx-auto;
+}
+
 table {
   @apply h-full w-full border-collapse;
 }

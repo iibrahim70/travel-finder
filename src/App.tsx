@@ -1,9 +1,11 @@
-import FlightDetailsTable from "./components/FlightDetailsTable";
+import DetailsTable from "./components/DetailsTable";
+import SearchFrom from "./components/SearchFrom";
 
 const App = () => {
   return (
     <main>
-      <FlightDetailsTable />
+      <SearchFrom />
+      <DetailsTable />
     </main>
   );
 };

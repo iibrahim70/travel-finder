@@ -1,12 +1,12 @@
 import data from "../../public/data.json";
 import { IApiResponse, IFlightOffer, IItinerary } from "../types";
 
-const FlightDetailsTable = () => {
+const DetailsTable = () => {
   // Destructure the flightOffer array from data
   const { flightOffer } = data as IApiResponse;
 
   return (
-    <section>
+    <section className="section-wrapper mb-10">
       <table>
         <thead>
           <tr>
@@ -168,4 +168,4 @@ const FlightDetailsTable = () => {
   );
 };
 
-export default FlightDetailsTable;
+export default DetailsTable;
